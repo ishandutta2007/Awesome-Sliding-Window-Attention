@@ -91,3 +91,15 @@ While sliding window attention provides a clear mathematical optimization path, 
 | [**High-Frame-Rate Video Comprehension**](./details/high-frame-rate-video-comprehension.md) | Processes long security or autonomous driving camera feeds. Because video features exhibit massive temporal redundancy between adjacent frames, a temporal sliding window attention layer focuses the model's capacity on short-range motion transitions, ignoring frames from hours prior. | 2021 | [Video Swin Transformer (Liu et al.)](https://arxiv.org/abs/2106.13230)<br/>[TimeSformer (Bertasius et al.)](https://arxiv.org/abs/2102.05095) |
 
 
+
+
+## 📈 Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Sliding-Window-Attention&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Sliding-Window-Attention&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Sliding-Window-Attention&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Sliding-Window-Attention&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
