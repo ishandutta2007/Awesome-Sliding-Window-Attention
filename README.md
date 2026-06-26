@@ -1,11 +1,31 @@
-# Awesome-Sliding-Window-Attention
-## Sliding Window Attention: Evolution, Variants, Types, & Applications
+<div align="center">
+
+# 🧠 Awesome Sliding Window Attention 🚀
+
+![Awesome Sliding Window Attention Banner](./assets/banner.svg)
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Sliding-Window-Attention/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Sliding-Window-Attention?style=flat-square" alt="GitHub stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Sliding-Window-Attention/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Sliding-Window-Attention?style=flat-square" alt="GitHub forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Sliding-Window-Attention/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Sliding-Window-Attention?style=flat-square" alt="GitHub license"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+A curated, SEO-friendly collection of evolution, variants, types, and applications of **Sliding Window Attention** (Local Attention) in Transformer architectures.
+
+---
+</div>
+
+## 📌 Table of Contents
+- [📖 Introduction](#-introduction)
+- [⏳ 1. The Chronological Evolution](#-1-the-chronological-evolution)
+- [🔧 2. Core Functional & Structural Variants](#-2-core-functional--structural-variants)
+- [💾 3. High-Yield Cache Management Types](#-3-high-yield-cache-management-types)
+- [⚙️ 4. Production Engineering Challenges & Hardware Trade-Offs](#-4-production-engineering-challenges--hardware-trade-offs)
+- [🚀 5. Frontier Real-World Applications](#-5-frontier-real-world-applications)
+
+## 📖 Introduction
 
 Sliding Window Attention—also known as Local Attention—is a structural sparsification technique designed to mitigate the quadratic computational complexity ($O(N^2)$) and VRAM bottlenecks of standard Full Self-Attention in Transformer models. In full attention, every token must compute an attention score with every other token in a sequence, making long-context processing (e.g., full books, long videos, or massive code repositories) highly inefficient. Sliding Window Attention restricts each token's attention field to a fixed, localized neighborhood (a "window") of adjacent tokens, dropping the computational and memory footprint down to true linear scaling ($O(N \times W)$), where $W$ is the window width.
 
 ---
 
-## 1. The Chronological Evolution
+## ⏳ 1. The Chronological Evolution
 
 The implementation of sliding window mechanisms has evolved from rigid, localized text boundaries to multi-scale hybrid configurations capable of maintaining long-range context without quadratic overhead.
 
@@ -25,7 +45,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Structural Variants
+## 🔧 2. Core Functional & Structural Variants
 
 Sliding window attention is deployed using distinct layout configurations that alter how information travels across the deep layers of a Transformer.
 
@@ -38,7 +58,7 @@ Sliding window attention is deployed using distinct layout configurations that a
 
 ---
 
-## 3. High-Yield Cache Management Types
+## 💾 3. High-Yield Cache Management Types
 
 Managing the Key-Value (KV) cache during continuous sliding window inference dictates the latency profile and memory consumption of production systems.
 
@@ -50,7 +70,7 @@ Managing the Key-Value (KV) cache during continuous sliding window inference dic
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Trade-Offs
+## ⚙️ 4. Production Engineering Challenges & Hardware Trade-Offs
 
 While sliding window attention provides a clear mathematical optimization path, hardware integration presents distinct engineering constraints.
 
@@ -62,7 +82,7 @@ While sliding window attention provides a clear mathematical optimization path, 
 
 ---
 
-## 5. Frontier Real-World Applications
+## 🚀 5. Frontier Real-World Applications
 
 | Application Field | Application Context & Impact | Year First Used | First Paper |
 | :--- | :--- | :---: | :--- |
