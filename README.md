@@ -9,8 +9,12 @@ Sliding Window Attention—also known as Local Attention—is a structural spars
 
 The implementation of sliding window mechanisms has evolved from rigid, localized text boundaries to multi-scale hybrid configurations capable of maintaining long-range context without quadratic overhead.
 
-[Rigid Local Windows (2019/2020)] ----> [Dilated & Global Hybrids (Longformer)] ----> [Dynamic Context Extrapolations (Mistral)](Strict Nearby Token Scopes)             (Asymmetric Strided Distance Steps)          (Rolling Buffers & Attention Sinks)
-
+```mermaid
+flowchart LR
+    A["Rigid Local Windows (2019/2020)<br/>(Strict Nearby Token Scopes)"]
+    --> B["Dilated & Global Hybrids (Longformer)<br/>(Asymmetric Strided Distance Steps)"]
+    --> C["Dynamic Context Extrapolations (Mistral)<br/>(Rolling Buffers & Attention Sinks)"]
+```
 
 *   **The Flat Heuristic Era (Early Local Attention, ~2019–2020)**
     *   *Concept:* Introduced in models like Child et al. (Sparse Transformers) and Sukhbaatar et al. (Adaptive Attention Span). Tokens were forced into strict, symmetric localized blocks. A token at index $i$ could only look at keys within $i \pm W/2$.
